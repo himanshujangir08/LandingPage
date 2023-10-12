@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+@font-face {
+    font-family: kajiro;
+    src: url(Kajiro\ Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    color: aliceblue;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#working-top {
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#navbar {
+    pointer-events: all;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#navbar img {
+    height: 60px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+.hero-left {
+    min-width: 50%;
+}
+
+.hero-left .elem {
+    position: relative;
+    height: 10vw;
+    overflow: hidden;
+}
+
+.hero-left .elem h1:nth-child(1) {
+    top: 0;
+}
+
+.hero-left .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "Kajiro";
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+.hero-left button {
+    pointer-events: all;
+    cursor: pointer;
+    padding: .8vw 3vw;
+    font-family: "Kajiro";
+    font-size: 3vw;
+    border: none;
+    margin-top: 3vw;
+}
+
+.hero-right {
+    width: 18%;
+    font-size: .9vw;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.hero-right p {
+    text-align: right;
+    font-size: .8vw;
+    font-weight: 500;
+}
+
+.hero-right .small-image {
+    width: 100%;
+    height: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-right p:nth-child(3) {
+    margin-bottom: 100px;
+}
